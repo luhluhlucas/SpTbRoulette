@@ -127,98 +127,147 @@ private final static int red[]={1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36
             System.out.println("Type the valid 4 numbers you wish to bet on");
             System.out.println("If you wish to see a list of the valid integers, press 'h'");
             int corner;
+            if(bettype(in.next())){
             corner=in.nextInt();
             switch(corner){
                 case 1245:
                     if(chickendinner==1||chickendinner==2||chickendinner==4||chickendinner==5){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 2356:
                     if(chickendinner==2||chickendinner==3||chickendinner==5||chickendinner==6){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 4578:
                     if(chickendinner==4||chickendinner==5||chickendinner==7||chickendinner==8){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 5689:
                     if(chickendinner==5||chickendinner==6||chickendinner==8||chickendinner==9){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 781011:
                     if(chickendinner==7||chickendinner==8||chickendinner==10||chickendinner==11){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 891112:
                     if(chickendinner==8||chickendinner==9||chickendinner==11||chickendinner==12){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 10111314:
                     if(chickendinner==10||chickendinner==11||chickendinner==13||chickendinner==14){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 11121415:
                     if(chickendinner==11||chickendinner==12||chickendinner==14||chickendinner==15){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 13141617:
-                    if(chickendinner==1||chickendinner==2||chickendinner==4||chickendinner==5){
+                    if(chickendinner==13||chickendinner==14||chickendinner==16||chickendinner==17){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 14151718:
-                    if(chickendinner==1||chickendinner==2||chickendinner==4||chickendinner==5){
+                    if(chickendinner==14||chickendinner==15||chickendinner==17||chickendinner==18){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 16171920:
-                    if(chickendinner==1||chickendinner==2||chickendinner==4||chickendinner==5){
+                    if(chickendinner==16||chickendinner==17||chickendinner==19||chickendinner==20){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 17182021:
-                    if(chickendinner==1||chickendinner==2||chickendinner==4||chickendinner==5){
+                    if(chickendinner==17||chickendinner==18||chickendinner==20||chickendinner==21){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 19202223:
-                    if(chickendinner==1||chickendinner==2||chickendinner==4||chickendinner==5){
+                    if(chickendinner==19||chickendinner==20||chickendinner==22||chickendinner==23){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 20212324:
-                    if(chickendinner==1||chickendinner==2||chickendinner==4||chickendinner==5){
+                    if(chickendinner==20||chickendinner==21||chickendinner==23||chickendinner==24){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 22232526:
-                    if(chickendinner==1||chickendinner==2||chickendinner==4||chickendinner==5){
+                    if(chickendinner==22||chickendinner==23||chickendinner==25||chickendinner==26){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 23242627:
-                    if(chickendinner==1||chickendinner==2||chickendinner==4||chickendinner==5){
+                    if(chickendinner==23||chickendinner==24||chickendinner==26||chickendinner==27){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 25262829:
-                    if(chickendinner==1||chickendinner==2||chickendinner==4||chickendinner==5){
+                    if(chickendinner==25||chickendinner==26||chickendinner==28||chickendinner==29){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 26272930:
-                    if(chickendinner==1||chickendinner==2||chickendinner==4||chickendinner==5){
+                    if(chickendinner==26||chickendinner==27||chickendinner==29||chickendinner==30){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 28293132:
-                    if(chickendinner==1||chickendinner==2||chickendinner==4||chickendinner==5){
+                    if(chickendinner==28||chickendinner==29||chickendinner==31||chickendinner==32){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 29303233:
-                    if(chickendinner==1||chickendinner==2||chickendinner==4||chickendinner==5){
+                    if(chickendinner==29||chickendinner==30||chickendinner==32||chickendinner==33){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 31323435:
-                    if(chickendinner==1||chickendinner==2||chickendinner==4||chickendinner==5){
+                    if(chickendinner==31||chickendinner==32||chickendinner==34||chickendinner==35){
+                        win=true;
+                        payout=9;
                     }
                     break;
                 case 32333536:
-                    if(chickendinner==1||chickendinner==2||chickendinner==4||chickendinner==5){
+                    if(chickendinner==32||chickendinner==33||chickendinner==35||chickendinner==36){
+                        win=true;
+                        payout=9;
                     }
                     break;
+            }}
+            if(in.next().equals("h")&&!bettype(in.next())){
+            cornerhelp();}else{
+            System.out.println("Invalid input- press h for help");
             }
-            cornerhelp();
+            
             /*
             
             
